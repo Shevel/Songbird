@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header/Header';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-    </div>
+    <Header birdsData={props.birdsData}/>
   );
 }
 
