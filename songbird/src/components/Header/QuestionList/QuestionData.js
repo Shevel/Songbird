@@ -21,7 +21,7 @@ const questionData = [
   },
   {
     id: 5,
-    category: 'Морские Птицы',
+    category: 'Морские птицы',
   },
 ];
 export default questionData;

@@ -1,0 +1,34 @@
+.answers_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.nxt_btn {
+  flex-basis: 100%;
+  border: 1px solid #FFFFFF30;
+  background-color: #303030;
+  color: #FFF;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nxt_btn:hover {
+  background-color: #808080;
+}
+.nxt_btn.next {
+  background-color: #2bbb26;
+}
+@media screen and (max-width: 768px) {
+  .answers_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .answers_list,
+  .nxt_btn {
+    width: 100%;
+  }
+}

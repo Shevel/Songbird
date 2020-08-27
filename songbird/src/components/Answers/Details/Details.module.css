@@ -1,0 +1,60 @@
+.details {
+  flex-basis: 47%;
+  background-color: #303030;
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.audio_player {
+  background-color: rgba(255, 255, 255, 0.2)!important;
+  border-radius: 10px;
+}
+.instruction {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.card {
+  /* display: flex; */
+  display: none;
+}
+.bird_image {
+  width: 220px;
+  height: 200px;
+  border-radius: 5px;
+}
+.card_body {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+.card_item {
+  margin-bottom: 5px;
+}
+.bird_name {
+  padding: 5px 0;
+  margin: 0;
+  border-bottom: 1px solid #ffffff30;
+  font-size: 1.4rem;
+}
+.bird_latin_name {
+  border-bottom: 1px solid #ffffff30;
+  font-size: 1.2rem;
+}
+.bird_description {
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 992px) {
+  .details {
+    text-align: justify;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
