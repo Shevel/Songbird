@@ -3,7 +3,7 @@ import logo from './Logo/logo.svg';
 import styles from './Header.module.css';
 import { QuestionList } from './QuestionList/QuestionList';
 
-export const Header = ({ score, currentPage }) => {
+export const Header = ({ score, currentPageIndex }) => {
 
   return (
     <header className={styles.header}>
@@ -13,7 +13,7 @@ export const Header = ({ score, currentPage }) => {
           <span>{score}</span>
         </div>
       </div>
-      <QuestionList currentPage={currentPage} />
+      <QuestionList currentPageIndex={currentPageIndex} />
     </header>
   )
 };

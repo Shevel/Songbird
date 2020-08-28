@@ -9,7 +9,7 @@ export const AnswerList = ({ birds, rightBirdNum, onSelectBird }) => {
 
     const audioHandler = (event) => {
       const id = event.target.getAttribute('id');
-      if (id == rightBirdNum) {
+      if (+id === rightBirdNum) {
         const audio = document.querySelector('.audio_correct');
         audio.play();
         return;

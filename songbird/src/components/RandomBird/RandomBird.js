@@ -28,9 +28,10 @@ export const RandomBird = ({ data, rightBirdName, rightAnswer }) => {
           layout='horizontal-reverse'
           defaultDuration={false}
           showJumpControls={false}
+          autoPlayAfterSrcChange={false}
           customAdditionalControls={[]}
           src={audio}
-        // onPlay={e => console.log("onPlay")}
+          autoPlay={false}
         />
       </div>
     </div>

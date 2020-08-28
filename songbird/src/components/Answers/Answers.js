@@ -3,7 +3,7 @@ import styles from './Answers.module.css';
 import { AnswerList } from './AnswerList/AnswerList';
 import { Details } from './Details/Details';
 
-export const Answers = ({ birds, rightBirdNum, onSelectBird, disabledButton }) => {
+export const Answers = ({ birds, rightBirdNum, onSelectBird, disabledButton, clickedBird }) => {
 
   return (
     <div className={styles.answers_block}>
@@ -14,10 +14,9 @@ export const Answers = ({ birds, rightBirdNum, onSelectBird, disabledButton }) =
       />
       <Details
         birds={birds}
-        rightBirdNum={rightBirdNum}
-        disabled={disabledButton}
+        clickedBird={clickedBird}
       />
-      <button 
+      <button
         className={styles.nxt_btn}
         disabled={disabledButton}
       >

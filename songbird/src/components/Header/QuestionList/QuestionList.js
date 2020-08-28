@@ -5,7 +5,7 @@ import questionData from './QuestionData';
 export const QuestionList = (props) => {
   const questionElements = questionData
     .map((question, i) => {
-      if (i === props.currentPage) {
+      if (i === props.currentPageIndex) {
         return (
           <li
             key={questionData.length - question.id}

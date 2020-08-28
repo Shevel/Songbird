@@ -3,11 +3,9 @@ import styles from './Details.module.css';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
-export const Details = ({ birds, rightBirdNum, disabled }) => {
+export const Details = ({ birds, clickedBird }) => {
 
-  const rightBird = birds[rightBirdNum];
-
-  if (disabled) {
+  if (clickedBird === null) {
     return (
       <div className={styles.details}>
         <p className={styles.instruction}>
@@ -16,38 +14,39 @@ export const Details = ({ birds, rightBirdNum, disabled }) => {
         </p>
       </div>
     )
-  }
-
-  if (!disabled) {
+  } else if (clickedBird >= 0) {
+    const birdToShow = birds[clickedBird];
     return (
       <div className={styles.details}>
         <div className={styles.card}>
           <img
             className={styles.bird_image}
-            src={rightBird.image}
-            alt={rightBird.name}
+            src={birdToShow.image}
+            alt={birdToShow.name}
           />
           <ul className={styles.card_body}>
             <li className={styles.card_item}>
-              <h3 className={styles.bird_name}>{rightBird.name}</h3>
+              <h3 className={styles.bird_name}>{birdToShow.name}</h3>
             </li>
             <li className={styles.card_item}>
-              <span className={styles.bird_latin_name}>{rightBird.species}</span>
+              <span className={styles.bird_latin_name}>{birdToShow.species}</span>
             </li>
             <li className={styles.card_item}>
               <AudioPlayer
                 className={styles.audio_player}
                 layout='horizontal-reverse'
+                autoPlay={false}
+                autoPlayAfterSrcChange={false}
                 defaultDuration={false}
                 showJumpControls={false}
                 customVolumeControls={[]}
                 customAdditionalControls={[]}
-                src={rightBird.audio}
+                src={birdToShow.audio}
               />
             </li>
             <li className={styles.card_item}>
               <span className={styles.bird_description}>
-                {rightBird.description}
+                {birdToShow.description}
               </span>
             </li>
           </ul>
