@@ -12,19 +12,15 @@ let initialMark = 5;
 
 function App() {
 
-  const DEFAULT_DETAILS_TEXT = 'Послушайте плеер. Выберите птицу из списка';
-
   const [score, setScore] = useState(0);
   const [currentPage, setCurrentPage] = useState(0); // index
 
-  const [currentBirdsInfo, setCurrentBirdsInfo] = useState(DEFAULT_DETAILS_TEXT);
   const [currentData, setCurrentData] = useState(birdsData[currentPage]);
   const [randomBird, setRandomBird] = useState(getRandomNum(currentData.length));
 
   const [disabledButton, setDisabledButton] = useState(true);
 
   const clickOnAnswer = (id, currentHtml) => {
-    setCurrentBirdsInfo(currentData[id]);
 
     if (disabledButton) {
       if (id == randomBird) {
@@ -39,7 +35,6 @@ function App() {
     }
   };
 
-  // console.log(birdsData[0][randomBird]);
   return (
     <React.Fragment>
       <Header

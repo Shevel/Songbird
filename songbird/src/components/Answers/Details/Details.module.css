@@ -11,7 +11,6 @@
 }
 .instruction {
   display: flex;
-  /* display: none; */
   flex-direction: column;
   font-size: 1rem;
   margin: 0px;
@@ -19,8 +18,7 @@
   margin-bottom: 10px;
 }
 .card {
-  /* display: flex; */
-  display: none;
+  display: flex;
 }
 .bird_image {
   width: 220px;

@@ -12,7 +12,11 @@ export const Answers = ({ birds, rightBirdNum, onSelectBird, disabledButton }) =
         rightBirdNum={rightBirdNum}
         onSelectBird={onSelectBird}
       />
-      <Details />
+      <Details
+        birds={birds}
+        rightBirdNum={rightBirdNum}
+        disabled={disabledButton}
+      />
       <button 
         className={styles.nxt_btn}
         disabled={disabledButton}
