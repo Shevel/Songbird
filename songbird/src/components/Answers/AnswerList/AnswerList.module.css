@@ -31,12 +31,6 @@
   border-radius: 50%;
   background-color: #808080;
 }
-.answer__item.success .answer__btn {
-  background-color: #2bbb26;
-}
-.answer__item.error .answer__btn {
-  background-color: #bb2626;
-}
 
 @media screen and (max-width: 768px) {
   .answer__list {

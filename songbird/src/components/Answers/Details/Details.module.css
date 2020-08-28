@@ -52,6 +52,7 @@
 @media screen and (max-width: 992px) {
   .details {
     text-align: justify;
+    width: 100%;
   }
   .card {
     flex-direction: column;

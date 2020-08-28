@@ -16,11 +16,15 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.nxt_btn:hover {
-  background-color: #808080;
-}
 .nxt_btn.next {
   background-color: #2bbb26;
+}
+.nxt_btn:not(:disabled):not(.disabled) {
+  background-color: #00bc8c;
+  border-color: #007c5d;
+}
+.nxt_btn:not(:disabled):not(.disabled):hover {
+  background-color: #00efb2;
 }
 @media screen and (max-width: 768px) {
   .answers_block {
