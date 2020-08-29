@@ -14,8 +14,12 @@ let contentName = (answer, name) => {
   return <h3 className={styles.random_bird__name}>******</h3>;
 };
 
-export const RandomBird = ({ data, rightBirdName, rightAnswer }) => {
+export const RandomBird = ({ data, rightBirdName, rightAnswer, showScore }) => {
 
+  if (showScore) {
+    return null;
+  }
+  
   const { audio, image, name } = data[rightBirdName];
 
   return (

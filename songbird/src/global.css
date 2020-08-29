@@ -7,3 +7,9 @@
 .error span{
   background-color: #bb2626;
 }
+.hidden {
+  display: none;
+}
+.visible {
+  display: initial;
+}

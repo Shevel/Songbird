@@ -5,34 +5,12 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.nxt_btn {
-  flex-basis: 100%;
-  border: 1px solid #FFFFFF30;
-  background-color: #303030;
-  color: #FFF;
-  padding: 10px;
-  margin: 20px 0;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.nxt_btn.next {
-  background-color: #2bbb26;
-}
-.nxt_btn:not(:disabled):not(.disabled) {
-  background-color: #00bc8c;
-  border-color: #007c5d;
-}
-.nxt_btn:not(:disabled):not(.disabled):hover {
-  background-color: #00efb2;
-}
 @media screen and (max-width: 768px) {
   .answers_block {
     flex-direction: column;
     align-items: center;
   }
-  .answers_list,
-  .nxt_btn {
+  .answers_list {
     width: 100%;
   }
 }
