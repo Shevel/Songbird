@@ -34,6 +34,7 @@ function App() {
         setScore(score + initialMark);
         setDisabledButton(false);
         currentHtml.classList.add('success');
+        document.querySelector('.rhap_container audio').pause();
         initialMark = 6;
       } else {
         currentHtml.classList.add('error');
