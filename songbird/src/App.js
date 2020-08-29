@@ -56,7 +56,7 @@ function App() {
     removeClassFromAnswers('success');
     removeClassFromAnswers('error');
   };
-
+  console.log('Правильный вариант ответа: ',currentData[randomBird].name);
   return (
     <React.Fragment>
       <Header
