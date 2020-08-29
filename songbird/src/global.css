@@ -1,0 +1,15 @@
+.current {
+  background-color: #00bc8c;
+}
+.success span {
+  background-color: #2bbb26;
+}
+.error span{
+  background-color: #bb2626;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: initial;
+}

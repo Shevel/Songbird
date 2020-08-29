@@ -1,0 +1,22 @@
+.question_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.question_list__item {
+  flex: auto;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #008966;
+}
+.question_list__link {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.3rem;
+  cursor: default;
+}
