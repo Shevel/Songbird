@@ -35,8 +35,12 @@ function App() {
         setDisabledButton(false);
         currentHtml.classList.add('success');
         document.querySelector('.rhap_container audio').pause();
-        initialMark = 6;
+        initialMark = 5;
+        return;
       } else {
+        if (currentHtml.classList.contains('error')) {
+          return;
+        }
         currentHtml.classList.add('error');
       }
       initialMark--;
@@ -57,7 +61,7 @@ function App() {
     removeClassFromAnswers('success');
     removeClassFromAnswers('error');
   };
-  console.log('Правильный вариант ответа: ',currentData[randomBird].name);
+  console.log('Правильный вариант ответа: ', currentData[randomBird].name);
   return (
     <React.Fragment>
       <Header

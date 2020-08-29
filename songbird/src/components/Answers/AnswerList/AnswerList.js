@@ -14,6 +14,9 @@ export const AnswerList = ({ birds, rightBirdNum, onSelectBird }) => {
         audio.play();
         return;
       }
+      if (event.target.classList.contains('error')) {
+        return;
+      }
       const audio = document.querySelector('.audio_incorrect');
       audio.play();
     }
