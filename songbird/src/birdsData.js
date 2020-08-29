@@ -168,11 +168,11 @@ const birdsData = [
     },
     {
       id: 2,
-      name: 'Скворец',
-      species: 'Sturnus vulgaris',
-      description: 'Скворцы - перелётные птицы. Синхронный перелет больших стай скворцов называется мурмурацией. Это красивое и завораживающее явление – множество птиц будто танцуют в воздухе, образуя замысловатые фигуры, которые уменьшаются и увеличиваются в небе.',
-      image: 'https://live.staticflickr.com/65535/49357593971_9509fe1d7c.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/GYAUIPUVNM/XC515519-2020.01.01_17.24_01.MP3'
+      name: 'Горихвостка-чернушка',
+      species: 'Phoenicurus ochruros',
+      description: 'Горихво́стка-черну́шка — мелкая певчая птица из семейства мухоловковых, распространённая в Европе и Центральной Азии. Несколько меньше воробья, выделяется прежде всего тёмным оперением большей части тела и ржавчато-оранжевым хвостом. Может зависать в воздухе, подобно колибри.',
+      image: 'https://live.staticflickr.com/65535/50076437877_938e94c507_b.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/QCUZCGVQZU/XC563263-Rougequeue%20noir%20StGh%2008avr20%200808.mp3'
     },
     {
       id: 3,
@@ -192,11 +192,11 @@ const birdsData = [
     },
     {
       id: 5,
-      name: 'Щегол',
-      species: 'Carduelis carduelis',
-      description: 'Щеглы поют красиво и мелодично. И в природе, и в неволе они щебечут почти круглый год. В пении щегла различают более 20 переливчатых трелей. Щеглы привыкают к людям, и даже могут возвратиться к хозяину после того, как их выпустили на волю',
-      image: 'https://live.staticflickr.com//65535//49366257253_db3ce48b9a.jpg',
-      audio: 'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC489265-190724_07.58h_putter_biesbosch_%20boompjes%20langs%20open%20water_zang_1ex_ad_niet%20gezien_.mp3'
+      name: 'Варакуша',
+      species: 'Passeri',
+      description: 'Характеризуются незначительной длиной первого из десяти маховых перьев, которое всегда бывает короче других маховых, иногда рудиментарно или даже совершенно отсутствует, и вполне развитой нижней гортанью, в образовании которой участвуют как трахея, так и бронхи и которая снабжена большей частью пятью парами мускулов, прикреплённых к концам бронхиальных полуколец. Плюсна спереди покрыта большими слившимися щитками.',
+      image: 'https://live.staticflickr.com/947/27001514517_ae3ea0f09f_n.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC585407-Bl%C3%A5hake_09.mp3'
     }
   ],
   [
@@ -297,6 +297,56 @@ const birdsData = [
       description: 'Чайки населяют берега морей, озёр, рек, водохранилищ, болот, часто гнездятся на островах. С конца прошлого века чайки стали появляться в крупных городах, где устраивает гнёзда на крышах зданий. Все чайки ведут колониальный образ жизни.',
       image: 'https://live.staticflickr.com/65535/48577115317_7034201dde.jpg',
       audio: 'https://www.xeno-canto.org/sounds/uploaded/VOLIQOYWKG/XC501190-190801_06.50h_zilvermeeuw_duinen%20van%20goeree_roep_2ex_overvliegend_gezien_.mp3'
+    }
+  ],
+  [
+    {
+      id: 0,
+      name: 'Кряква(Утка)',
+      species: 'Anas platyrhynchos',
+      description: 'Кря́ква — птица из семейства утиных отряда гусеобразных. Наиболее известная и распространённая дикая утка. Длина тела самца около 62 см, самки — около 57 см, масса достигает 1—1,5 кг. Голова и шея самца зелёные, зоб и грудь коричнево-бурые, спина и брюшная сторона тела серого цвета с тонкими поперечными пятнышками.',
+      image: 'https://live.staticflickr.com/7909/40139695983_1d5d5ba196_c.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/IIJAXHKSCC/XC552094-Yellow-billed%20Duck%20%28flight%20call%29%2020200402%2CKasankaNP%2CZAMBIA.mp3'
+    },
+    {
+      id: 1,
+      name: 'Аист',
+      species: 'Ciconia',
+      description: 'Это белая птица с чёрными концами крыльев, длинной шеей, длинным, тонким, красным клювом и длинными красноватыми ногами. Когда крылья у аиста сложены, создаётся впечатление, что вся задняя часть тела аиста чёрная.',
+      image: 'https://live.staticflickr.com/2506/3736036639_3cacb16f02_k.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/XUDFGWMRXG/XC521611-White%20Stork%20Bill%20Clapping_180120_EstanyDivars.825wav.mp3'
+    },
+    {
+      id: 2,
+      name: 'Чибис',
+      species: 'Vanellus vanellus',
+      description: ' Чибисы обитают зачастую на открытом пространстве: на берегах озёр, рек и в болотистых местностях. Часто их можно встретить и на возделанных землях. Чибисы — очень громкие птицы.',
+      image: 'https://live.staticflickr.com/3932/33780976196_1c428def5f_z.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/XIBLXHRPJO/XC584643-VANVAN%2014082020%201000%20K6inastu.mp3'
+    },
+    {
+      id: 3,
+      name: 'Зимородок',
+      species: 'Alcedo atthis',
+      description: 'Длина крыла 7—8 см, размах крыльев примерно 25 сантиметров, масса 25—45 граммов. Имеет яркое оперение, сверху блестящее, голубовато-зелёное, с мелкими светлыми крапинками на голове и крыльях, снизу ржаво-рыжее, полоска через глаз к затылку и горлышко светлые.',
+      image: 'https://live.staticflickr.com/2902/14684242966_59a30a201f_z.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/RVLNPQSYVW/XC571413-common%20kingfisher%2820.5.18.9.2%29.mp3'
+    },
+    {
+      id: 4,
+      name: 'Лебедь',
+      species: 'Cygnus',
+      description: 'У лебедей очень длинная шея, вытянутое туловище, тело и голова средней величины с оранжево-красным клювом, у основания которого есть характерный чёрный нарост. Шипуном назван из-за звука, издаваемого при раздражении. В длину может достигать 180 см.',
+      image: 'https://live.staticflickr.com/65535/49747649857_bcd306e043_z.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/EAMYLQQNNS/XC543410-09-04-20-2.mp3'
+    },
+    {
+      id: 5,
+      name: 'Дубонос',
+      species: 'Coccothraustes',
+      description: 'Обыкновенный дубонос (лат. Coccothraustes coccothraustes) — вид птиц из семейства вьюрковых. Птица средних размеров (длиной до 18 см) Размах крыльев достигает 30-33 см. с очень массивным голубовато-серым (зимой палевым) клювом, приспособленным для щелканья косточек плодов и ягод: вишни, черешни, черемухи.',
+      image: 'https://live.staticflickr.com/4847/44244032150_92e3f8ebfd_z.jpg',
+      audio: 'https://www.xeno-canto.org/sounds/uploaded/XAMHIHFTZG/XC579556-call3.mp3'
     }
   ]
 ];

@@ -44,7 +44,7 @@ function App() {
   };
 
   const handleClickNext = () => {
-    if (currentPageIndex === 5) {
+    if (currentPageIndex === 6) {
       handleShowScore();
       setCurrentData(birdsData[0]);
     } else {

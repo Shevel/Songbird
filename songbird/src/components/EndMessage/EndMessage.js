@@ -6,11 +6,11 @@ export const EndMessage = ({ score, showScore, setCurrentPageIndex, setScore, ha
     <span
       className={styles.end_message__text}
     >
-      Вы набрали {score} баллов из 30 возможных.
+      Вы набрали {score} баллов из 35 возможных.
     </span>
   );
   if (showScore) {
-    if (score === 30) {
+    if (score === 35) {
       result = (
         <span
           className={styles.end_message__text}
