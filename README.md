@@ -1,18 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Songbird
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-# songbird
+Deploy Link: [Songbird](https://shevel-songbird.netlify.app/)
 
 Songbird - одностраничное приложение, викторина для распознавания птиц по их голосам.
 
@@ -41,3 +29,17 @@ Songbird - одностраничное приложение, викторина
 - после последнего вопроса выводится счёт игры: "Вы набрали *** баллов из *** возможных. 
 - если набрано не максимально возможное количество баллов, игроку предлагается пройти викторину ещё раз
 - если набрано максимально возможное количество баллов, выводится поздравление и уведомление об окончании игры.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
